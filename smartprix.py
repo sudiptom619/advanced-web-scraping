@@ -49,6 +49,6 @@ html = driver.page_source
 
 with open("html.txt", "w",encoding='utf-8') as f:
     f.write(html)
-driver.close()
+driver.quit()
 
 
