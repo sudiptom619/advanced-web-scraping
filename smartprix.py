@@ -33,7 +33,7 @@ old_height = driver.execute_script('return document.body.scrollHeight')
 while True:
 
     driver.find_element(by=By.XPATH, value='//*[@id="app"]/main/div[1]/div[2]/div[3]').click()
-    time.sleep(1)
+    time.sleep(5)
 
     new_height = driver.execute_script('return document.body.scrollHeight')
 
@@ -47,8 +47,8 @@ while True:
 
 html = driver.page_source
 
-with open("html.txt", "w",encoding='utf-8') as f:
+with open("smartprix.html", "w", encoding='utf-8') as f:
     f.write(html)
-driver.quit()
+
 
 
